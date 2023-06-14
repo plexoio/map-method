@@ -50,7 +50,7 @@ const students = [
   },
   {
     id: 2,
-    name: 'Ariel',
+    name: 'Arinel',
     profession: 'Developer',
     skill: 'HTML'
   },
@@ -61,6 +61,7 @@ const students = [
     skill: 'CSS'
   },
 ];
+
 
 let myStudents = students.map(student => [student.name, student.id]); // array of arrays
 console.log(myStudents);
