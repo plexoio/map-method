@@ -25,9 +25,13 @@ let students = [
     }
 ];
 
+// access only first value, and then display the 'rest' as an object in an array
+
 let [student, ...rest] = students.map(studentInfo => [studentInfo.name, studentInfo.results]);
 console.log(student);
 console.log(rest);
+
+// 'student' refers to the first position of the array of objects, 'students[0]'
 
 // OR
 
