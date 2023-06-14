@@ -1,20 +1,44 @@
-  
+
 /**
  * To run this file in Gitpod, use the 
  * command node map.js in the terminal
  */
 
-// Using a for loop
+// Vanilla function
+function myNumber (num) {
+  return num * 2
+}
 
 
-// Using map()
+// Using a for loop, vanilla JS
 
+let nums = [1, 2, 3, 4, 5];
+let results = [];
 
-// Simplified w/ map()
+for (num of nums) {
+  results.push(num * 2);
+}
 
+console.log(results);
+
+// Using map(), VERBOSE way
+
+const mapNumber = function (num) {
+  return num * 2
+}
+
+const workNumber = nums.map(mapNumber);
+console.log(workNumber);
+
+// Simplified w/ map(), verbose CALLBACK function
+
+const workNumber2 = nums.map(function (num) {return num * 2});
+console.log(workNumber2);
 
 // Simplfied w/ map() + arrow function
 
+let results2 = nums.map(num => num * 2);
+console.log(results2);
 
 // With objects:
 const students = [
@@ -37,3 +61,9 @@ const students = [
     skill: 'CSS'
   },
 ];
+
+let myStudents = students.map(student => [student.name, student.id]); // array of arrays
+console.log(myStudents);
+
+// let myStudents = students.map(student => `${student.name}, ${student.id}`);
+// One array solution
