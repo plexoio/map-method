@@ -63,7 +63,7 @@ const students = [
 ];
 
 
-let myStudents = students.map(student => [student.name, student.id]); // array of arrays
+let myStudents= students.map(student => student.name); // array of arrays
 console.log(myStudents);
 
 // let myStudents = students.map(student => `${student.name}, ${student.id}`);

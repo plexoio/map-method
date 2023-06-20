@@ -32,7 +32,7 @@ console.log(student);
 console.log(rest);
 
 // 'student' refers to the first position of the array of objects, 'students[0]'
-
+console.log('-----------');
 // OR
 
 const myStudents = (studentsData) => [studentsData.name, studentsData.results]; // create function apart
